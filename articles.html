@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Management Notes | Karim Ali Mohamed</title>
+<meta name="description" content="Short notes on running F&B and retail branches: numbers, costs, teams and delegation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Cairo:wght@400;600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14213d;--bg:#f4f6f8;--card:#fff;--green:#1f7a5a;--amber:#f2b632;--muted:#5a6478;--line:#d9dee6}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+html[lang=en] .ar,html[lang=ar] .en{display:none}
+body{font-family:"Source Sans 3",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15}
+html[lang=ar] body,html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{font-family:"Cairo",system-ui,sans-serif}
+html[lang=ar] body{line-height:1.85}
+html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{line-height:1.4;letter-spacing:0}
+a{color:var(--green)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.lang{position:fixed;top:14px;inset-inline-end:14px;z-index:10;border:0;border-radius:6px;padding:8px 16px;background:var(--amber);color:var(--ink);font:600 1rem "Cairo","Source Sans 3",sans-serif;cursor:pointer}
+header{background:var(--ink);color:#fff;padding:64px 0 0}
+header h1{font-size:clamp(2.4rem,7vw,4.2rem);font-weight:800;letter-spacing:-.02em}
+header .role{font-size:1.25rem;color:var(--amber);margin:8px 0 18px;font-weight:600}
+header p.sum{max-width:62ch;color:#d6dcea}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 40px}
+.btn{display:inline-block;padding:10px 18px;border-radius:6px;background:var(--amber);color:var(--ink);font-weight:600;text-decoration:none}
+.btn.alt{background:transparent;color:#fff;border:1px solid #4a5a80}
+.btn:hover{filter:brightness(1.08)}
+.hero{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:center}
+.hero img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:50% 12%;display:block;border-radius:50%;border:4px solid var(--amber)}
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));background:var(--card);color:var(--ink);border-radius:10px 10px 0 0;overflow:hidden}
+.board div{padding:22px 20px;border-inline-start:4px solid var(--green)}
+.board div+div{border-inline-start-color:var(--amber)}
+.board b{display:block;font:800 2.2rem "Bricolage Grotesque",sans-serif;color:var(--green)}
+.board span{color:var(--muted);font-size:.95rem}
+section{padding:56px 0 8px}
+h2{font-size:1.9rem;margin-bottom:24px}
+.job{display:grid;grid-template-columns:150px 1fr;gap:8px 28px;padding:24px 0;border-top:1px solid var(--line)}
+.job .when{color:var(--muted);font-size:.95rem}
+.job h3{font-size:1.25rem}
+.job .co{color:var(--green);font-weight:600;margin-bottom:8px}
+.job ul{padding-inline-start:18px}
+.job li{margin-bottom:6px;max-width:68ch}
+.tags{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
+.tags li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 16px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px}
+.two ul{list-style:none;padding:0}
+.two li{padding:10px 0;border-top:1px solid var(--line)}
+.two small{color:var(--muted);display:block}
+footer{margin-top:64px;background:var(--ink);color:#d6dcea;padding:40px 0;text-align:center}
+footer a{color:var(--amber)}
+.about{max-width:68ch;font-size:1.1rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero img{order:-1;max-width:280px;margin:0 auto}}
+@media(max-width:640px){.job{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.top{background:var(--ink);color:#fff;padding:64px 0 36px}
+.top h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:800;margin:14px 0 8px}
+.top p{color:#d6dcea;max-width:62ch}
+.post{padding:26px 0;border-top:1px solid var(--line)}
+.post h2{font-size:1.4rem;margin-bottom:10px}
+.post p{max-width:68ch;margin-bottom:8px}
+.post .n{color:var(--green);font:800 1rem "Bricolage Grotesque",sans-serif}
+html[lang=ar] .post .n{font-family:"Cairo",sans-serif}
+</style>
+</head>
+<body>
+<button id="lang" class="lang" type="button"><span class="en" lang="ar">العربية</span><span class="ar" lang="en">English</span></button>
+<div class="top"><div class="wrap">
+<a class="btn alt" href="index.html"><span class="en">← Back to home</span><span class="ar">← العودة للرئيسية</span></a>
+<h1><span class="en">Management Notes</span><span class="ar">ملاحظات في الإدارة</span></h1>
+<p><span class="en">Short lessons from running F&B and retail branches day to day.</span><span class="ar">دروس قصيرة من إدارة فروع المأكولات والمشروبات والتجزئة يومًا بيوم.</span></p>
+</div></div>
+<main class="wrap">
+<article class="post"><span class="n">01</span><h2><span class="en">Read yesterday's numbers before the shift starts</span><span class="ar">اقرأ أرقام الأمس قبل بداية الوردية</span></h2><p><span class="en">Ten minutes with yesterday's sales, waste and service times tells you where today will go wrong. I look for one number that moved and one person to ask about it, then share it in the shift briefing so the whole team knows what we are working on.</span><span class="ar">عشر دقائق مع مبيعات الأمس والهدر وزمن الخدمة تكشف لك أين سيتعثر اليوم. أبحث عن رقم واحد تغيّر وعن شخص أسأله عنه، ثم أذكره في اجتماع بداية الوردية ليعرف الفريق كله ما نعمل عليه.</span></p></article>
+<article class="post"><span class="n">02</span><h2><span class="en">Cost control starts with waste, not with cutting staff</span><span class="ar">التحكم في التكاليف يبدأ من الهدر لا من تقليل العمالة</span></h2><p><span class="en">Cutting hours is the fastest way to lose service quality. Start with what is thrown away: over-ordering, portioning, and expiry. Count it weekly and the savings show up without touching the team.</span><span class="ar">تقليل ساعات العمل أسرع طريق لخسارة جودة الخدمة. ابدأ بما يُرمى: الطلب الزائد، ودقة الحصص، وانتهاء الصلاحية. احسبه أسبوعيًا وستظهر الوفورات دون المساس بالفريق.</span></p></article>
+<article class="post"><span class="n">03</span><h2><span class="en">Prepare the team for the rush, not during it</span><span class="ar">جهّز الفريق لساعة الذروة قبلها لا أثناءها</span></h2><p><span class="en">Rush hour is won in the twenty minutes before it: stations stocked, roles assigned, and one person free to solve problems. A manager who is still giving instructions during the rush is already late.</span><span class="ar">ساعة الذروة تُكسب في العشرين دقيقة التي تسبقها: نقاط العمل مجهزة، والأدوار موزعة، وشخص متفرغ لحل المشكلات. المدير الذي ما زال يعطي التعليمات وقت الذروة قد تأخر فعلًا.</span></p></article>
+<article class="post"><span class="n">04</span><h2><span class="en">Delegate the task, keep the result</span><span class="ar">فوّض المهمة واحتفظ بمسؤولية النتيجة</span></h2><p><span class="en">Give people a clear outcome, a deadline and the authority to decide, then check in at a set time instead of hovering. You stay accountable for the result, and the team grows into bigger responsibilities.</span><span class="ar">أعطِ كل شخص نتيجة واضحة وموعدًا وصلاحية القرار، ثم تابعه في وقت محدد بدل الوقوف فوق رأسه. تبقى مسؤولًا عن النتيجة، ويكبر الفريق ليتحمل مسؤوليات أكبر.</span></p></article>
+</main>
+<footer><div class="wrap"><p><a href="index.html"><span class="en">Home</span><span class="ar">الرئيسية</span></a></p></div></footer>
+<script>
+(function(){
+  var h=document.documentElement,btn=document.getElementById("lang");
+  var TITLE={en:"Management Notes | Karim Ali Mohamed",ar:"ملاحظات في الإدارة | كريم علي محمد"};
+  function set(l){
+    h.lang=l;h.dir=l==="ar"?"rtl":"ltr";document.title=TITLE[l];
+    btn.setAttribute("aria-label",l==="ar"?"Switch to English":"التبديل إلى العربية");
+    try{localStorage.setItem("lang",l)}catch(e){}
+  }
+  var s=null;try{s=localStorage.getItem("lang")}catch(e){}
+  if(!s){s=(navigator.language||"").slice(0,2)==="ar"?"ar":"en"}
+  set(s==="ar"?"ar":"en");
+  btn.addEventListener("click",function(){set(h.lang==="ar"?"en":"ar")});
+})();
+</script>
+</body>
+</html>
